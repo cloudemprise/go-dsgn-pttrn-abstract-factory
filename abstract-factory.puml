@@ -1,5 +1,10 @@
-@startuml
-namespace main {
+@startuml abstract-factory
+
+class Client #line.bold:royalBlue
+hide Client members
+hide Client circle
+
+namespace abstract-factory {
     class concreteFactory << (S,Aquamarine) >> {
         - attribute string
 
@@ -9,12 +14,12 @@ namespace main {
     class concreteProduct << (S,Aquamarine) >> {
         - attribute string
         - size int
-
+        --
         - setAttribute(attribute string) 
         - getAttribute() string
+        ..
         - setSize(size int) 
         - getSize() int
-
     }
     interface iAbstractFactory  {
         - makeProduct() iAbstractProduct
@@ -23,13 +28,27 @@ namespace main {
     interface iAbstractProduct  {
         - setAttribute(attribute string) 
         - getAttribute() string
+        ..
         - setSize(size int) 
         - getSize() int
-
     }
 }
 
-"main.iAbstractFactory" <|-- "main.concreteFactory"
-"main.iAbstractProduct" <|-- "main.concreteProduct"
+"Client" -[dotted,thickness=2,#royalBlue]-> "abstract-factory.iAbstractFactory"
+"Client" -[dotted,thickness=2,#royalBlue]-> "abstract-factory.iAbstractProduct"
+
+"abstract-factory.iAbstractFactory" <|-- "abstract-factory.concreteFactory"
+"abstract-factory.iAbstractProduct" <|-- "abstract-factory.concreteProduct"
+
+note as N1
+    <b><color:royalBlue>Abstract Factory</color></b>
+
+    <b>Type:</b> Creational
+
+    Provides an interface for creating
+    families of related or dependent
+    objects without specifying their
+    concrete class.
+end note
 
 @enduml
