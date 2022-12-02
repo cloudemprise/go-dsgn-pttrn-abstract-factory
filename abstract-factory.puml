@@ -1,0 +1,55 @@
+@startuml
+namespace main {
+    class concreteFactory << (S,Aquamarine) >> {
+        - name string
+
+        - makeProductA() iAbstractProductA
+        - makeProductB() iAbstractProductB
+
+    }
+    class concreteProductA << (S,Aquamarine) >> {
+        - attribute string
+        - size int
+
+        - setPropertyA(attribute string) 
+        - getPropertyA() string
+        - setSizeOfA(size int) 
+        - getSizeOfA() int
+
+    }
+    class concreteProductB << (S,Aquamarine) >> {
+        - attribute string
+        - size int
+
+        - setPropertyB(attribute string) 
+        - getPropertyB() string
+        - setSizeOfB(size int) 
+        - getSizeOfB() int
+
+    }
+    interface iAbstractFactory  {
+        - makeProductA() iAbstractProductA
+        - makeProductB() iAbstractProductB
+
+    }
+    interface iAbstractProductA  {
+        - setPropertyA(attribute string) 
+        - getPropertyA() string
+        - setSizeOfA(size int) 
+        - getSizeOfA() int
+
+    }
+    interface iAbstractProductB  {
+        - setPropertyB(attribute string) 
+        - getPropertyB() string
+        - setSizeOfB(size int) 
+        - getSizeOfB() int
+
+    }
+}
+
+"main.iAbstractFactory" <|-- "main.concreteFactory"
+"main.iAbstractProductA" <|-- "main.concreteProductA"
+"main.iAbstractProductB" <|-- "main.concreteProductB"
+
+@enduml
