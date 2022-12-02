@@ -6,8 +6,7 @@ import "fmt"
 
 // define an abstract factory that makes abstract products
 type iAbstractFactory interface {
-	makeProductA() iAbstractProductA
-	makeProductB() iAbstractProductB
+	makeProduct() iAbstractProduct
 }
 
 // free-standing abstract factory constructor
@@ -18,7 +17,7 @@ func newAbstractFactory(factoryName string) (iAbstractFactory, error) {
 }
 
 // define an abstract product (A) with some methods
-type iAbstractProductA interface {
+type iAbstractProduct interface {
 	setPropertyA(attribute string)
 	getPropertyA() string
 	setSizeOfA(size int)
@@ -26,23 +25,9 @@ type iAbstractProductA interface {
 }
 
 // abstract product (A) method constructor
-func (*concreteFactory) makeProductA() iAbstractProductA {
-	var produceA = new(concreteProductA)
+func (*concreteFactory) makeProduct() iAbstractProduct {
+	var produceA = new(concreteProduct)
 	return produceA
-}
-
-// define an abstract product (B) with some methods
-type iAbstractProductB interface {
-	setPropertyB(attribute string)
-	getPropertyB() string
-	setSizeOfB(size int)
-	getSizeOfB() int
-}
-
-// abstract product (B) method constructor
-func (*concreteFactory) makeProductB() iAbstractProductB {
-	var produceB = new(concreteProductB)
-	return produceB
 }
 
 // define a concrete factory type
@@ -51,13 +36,7 @@ type concreteFactory struct {
 }
 
 // define a concrete product (A) type
-type concreteProductA struct {
-	attribute string
-	size      int
-}
-
-// define a concrete product (B) type
-type concreteProductB struct {
+type concreteProduct struct {
 	attribute string
 	size      int
 }
@@ -65,39 +44,20 @@ type concreteProductB struct {
 // concrete productA implementations
 // ---------------------------------
 
-func (item *concreteProductA) setPropertyA(attribute string) {
+func (item *concreteProduct) setPropertyA(attribute string) {
 	item.attribute = attribute
 }
 
-func (item *concreteProductA) getPropertyA() string {
+func (item *concreteProduct) getPropertyA() string {
 	return item.attribute
 }
 
-func (item *concreteProductA) setSizeOfA(size int) {
+func (item *concreteProduct) setSizeOfA(size int) {
 	item.size = size
 }
 
-func (s *concreteProductA) getSizeOfA() int {
+func (s *concreteProduct) getSizeOfA() int {
 	return s.size
-}
-
-// concrete productB implementations
-// ---------------------------------
-
-func (item *concreteProductB) setPropertyB(attribute string) {
-	item.attribute = attribute
-}
-
-func (item *concreteProductB) getPropertyB() string {
-	return item.attribute
-}
-
-func (item *concreteProductB) setSizeOfB(size int) {
-	item.size = size
-}
-
-func (item *concreteProductB) getSizeOfB() int {
-	return item.size
 }
 
 func main() {
@@ -105,26 +65,15 @@ func main() {
 	myFactory, _ := newAbstractFactory("myAwesomeBrand")
 
 	// create productA from abstract factory
-	myProductA := myFactory.makeProductA()
-	makeAbstractProductA(myProductA)
+	myProduct := myFactory.makeProduct()
+	makeAbstractProduct(myProduct)
 
-	// create productB from abstract factory
-	myProductB := myFactory.makeProductB()
-	makeAbstractProductB(myProductB)
 }
 
-func makeAbstractProductA(prodA iAbstractProductA) {
+func makeAbstractProduct(prodA iAbstractProduct) {
 
 	prodA.setPropertyA("Set product A attribute here.")
 	prodA.setSizeOfA(69)
 	fmt.Printf("Product A Property: %s\n", prodA.getPropertyA())
 	fmt.Printf("Product A Size     : %d\n", prodA.getSizeOfA())
-}
-
-func makeAbstractProductB(prodB iAbstractProductB) {
-
-	prodB.setPropertyB("Set product B attribute here.")
-	prodB.setSizeOfB(13)
-	fmt.Printf("Product B Property: %s\n", prodB.getPropertyB())
-	fmt.Printf("Product B Size     : %d\n", prodB.getSizeOfB())
 }

@@ -3,11 +3,10 @@ namespace main {
     class concreteFactory << (S,Aquamarine) >> {
         - name string
 
-        - makeProductA() iAbstractProductA
-        - makeProductB() iAbstractProductB
+        - makeProduct() iAbstractProduct
 
     }
-    class concreteProductA << (S,Aquamarine) >> {
+    class concreteProduct << (S,Aquamarine) >> {
         - attribute string
         - size int
 
@@ -15,41 +14,22 @@ namespace main {
         - getPropertyA() string
         - setSizeOfA(size int) 
         - getSizeOfA() int
-
-    }
-    class concreteProductB << (S,Aquamarine) >> {
-        - attribute string
-        - size int
-
-        - setPropertyB(attribute string) 
-        - getPropertyB() string
-        - setSizeOfB(size int) 
-        - getSizeOfB() int
 
     }
     interface iAbstractFactory  {
-        - makeProductA() iAbstractProductA
-        - makeProductB() iAbstractProductB
+        - makeProduct() iAbstractProduct
 
     }
-    interface iAbstractProductA  {
+    interface iAbstractProduct  {
         - setPropertyA(attribute string) 
         - getPropertyA() string
         - setSizeOfA(size int) 
         - getSizeOfA() int
-
-    }
-    interface iAbstractProductB  {
-        - setPropertyB(attribute string) 
-        - getPropertyB() string
-        - setSizeOfB(size int) 
-        - getSizeOfB() int
 
     }
 }
 
 "main.iAbstractFactory" <|-- "main.concreteFactory"
-"main.iAbstractProductA" <|-- "main.concreteProductA"
-"main.iAbstractProductB" <|-- "main.concreteProductB"
+"main.iAbstractProduct" <|-- "main.concreteProduct"
 
 @enduml
