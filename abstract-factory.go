@@ -9,25 +9,25 @@ type iAbstractFactory interface {
 	makeProduct() iAbstractProduct
 }
 
-// free-standing abstract factory constructor
+// a free-standing abstract factory constructor
 func newAbstractFactory(factoryName string) (iAbstractFactory, error) {
 	var newFactory = new(concreteFactory)
 	newFactory.name = factoryName
 	return newFactory, nil
 }
 
-// define an abstract product (A) with some methods
+// define an abstract product with some behaviours
 type iAbstractProduct interface {
-	setPropertyA(attribute string)
-	getPropertyA() string
-	setSizeOfA(size int)
-	getSizeOfA() int
+	setAttribute(attribute string)
+	getAttribute() string
+	setSize(size int)
+	getSize() int
 }
 
-// abstract product (A) method constructor
+// an abstract product constructor
 func (*concreteFactory) makeProduct() iAbstractProduct {
-	var produceA = new(concreteProduct)
-	return produceA
+	var produce = new(concreteProduct)
+	return produce
 }
 
 // define a concrete factory type
@@ -35,45 +35,46 @@ type concreteFactory struct {
 	name string
 }
 
-// define a concrete product (A) type
+// define a concrete product type
 type concreteProduct struct {
 	attribute string
 	size      int
 }
 
-// concrete productA implementations
+// concrete product implementations
 // ---------------------------------
 
-func (item *concreteProduct) setPropertyA(attribute string) {
+func (item *concreteProduct) setAttribute(attribute string) {
 	item.attribute = attribute
 }
 
-func (item *concreteProduct) getPropertyA() string {
+func (item *concreteProduct) getAttribute() string {
 	return item.attribute
 }
 
-func (item *concreteProduct) setSizeOfA(size int) {
+func (item *concreteProduct) setSize(size int) {
 	item.size = size
 }
 
-func (s *concreteProduct) getSizeOfA() int {
-	return s.size
+func (item *concreteProduct) getSize() int {
+	return item.size
 }
 
 func main() {
 	// create a new abstract factory
 	myFactory, _ := newAbstractFactory("myAwesomeBrand")
 
-	// create productA from abstract factory
+	// create product from abstract factory
 	myProduct := myFactory.makeProduct()
 	makeAbstractProduct(myProduct)
 
 }
 
-func makeAbstractProduct(prodA iAbstractProduct) {
+// Test Case
+func makeAbstractProduct(prod iAbstractProduct) {
 
-	prodA.setPropertyA("Set product A attribute here.")
-	prodA.setSizeOfA(69)
-	fmt.Printf("Product A Property: %s\n", prodA.getPropertyA())
-	fmt.Printf("Product A Size     : %d\n", prodA.getSizeOfA())
+	prod.setAttribute("Special Attribute")
+	prod.setSize(69)
+	fmt.Printf("Product Attribute : %s\n", prod.getAttribute())
+	fmt.Printf("Product Size     : %d\n", prod.getSize())
 }

@@ -10,10 +10,10 @@ namespace main {
         - attribute string
         - size int
 
-        - setPropertyA(attribute string) 
-        - getPropertyA() string
-        - setSizeOfA(size int) 
-        - getSizeOfA() int
+        - setAttribute(attribute string) 
+        - getAttribute() string
+        - setSize(size int) 
+        - getSize() int
 
     }
     interface iAbstractFactory  {
@@ -21,10 +21,10 @@ namespace main {
 
     }
     interface iAbstractProduct  {
-        - setPropertyA(attribute string) 
-        - getPropertyA() string
-        - setSizeOfA(size int) 
-        - getSizeOfA() int
+        - setAttribute(attribute string) 
+        - getAttribute() string
+        - setSize(size int) 
+        - getSize() int
 
     }
 }
