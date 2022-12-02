@@ -1,7 +1,7 @@
 @startuml
 namespace main {
     class concreteFactory << (S,Aquamarine) >> {
-        - name string
+        - attribute string
 
         - makeProduct() iAbstractProduct
 

@@ -10,9 +10,9 @@ type iAbstractFactory interface {
 }
 
 // a free-standing abstract factory constructor
-func newAbstractFactory(factoryName string) (iAbstractFactory, error) {
+func newAbstractFactory(factoryAttribute string) (iAbstractFactory, error) {
 	var newFactory = new(concreteFactory)
-	newFactory.name = factoryName
+	newFactory.attribute = factoryAttribute
 	return newFactory, nil
 }
 
@@ -32,7 +32,7 @@ func (*concreteFactory) makeProduct() iAbstractProduct {
 
 // define a concrete factory type
 type concreteFactory struct {
-	name string
+	attribute string
 }
 
 // define a concrete product type
