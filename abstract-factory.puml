@@ -5,32 +5,33 @@ hide Client members
 hide Client circle
 
 namespace abstract-factory {
-    class concreteFactory << (S,Aquamarine) >> {
-        - attribute string
-
-        - makeProduct() iAbstractProduct
-
-    }
-    class concreteProduct << (S,Aquamarine) >> {
-        - attribute string
-        - size int
-        --
-        - setAttribute(attribute string) 
-        - getAttribute() string
+    interface iAbstractProduct  {
+        - setBehaviour(behaviour string) 
+        - getBehaviour() string
         ..
-        - setSize(size int) 
-        - getSize() int
+        - setFeature(feature int) 
+        - getFeature() int
+
     }
     interface iAbstractFactory  {
         - makeProduct() iAbstractProduct
 
     }
-    interface iAbstractProduct  {
-        - setAttribute(attribute string) 
-        - getAttribute() string
+    class concreteProduct << (S,Aquamarine) >> {
+        - behaviour string
+        - feature int
+        --
+        - setBehaviour(behaviour string) 
+        - getBehaviour() string
         ..
-        - setSize(size int) 
-        - getSize() int
+        - setFeature(feature int) 
+        - getFeature() int
+
+    }
+    class concreteFactory << (S,Aquamarine) >> {
+        - specialAttribute string
+
+        - makeProduct() iAbstractProduct
     }
 }
 
@@ -49,6 +50,13 @@ note as N1
     families of related or dependent
     objects without specifying their
     concrete class.
+end note
+
+note right of abstract-factory.iAbstractFactory::iAbstractProduct
+    An abstract factory
+    returns an abstract
+    pointer to a concrete 
+    object.
 end note
 
 @enduml

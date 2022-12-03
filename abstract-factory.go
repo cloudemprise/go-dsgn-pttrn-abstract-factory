@@ -6,22 +6,23 @@ import "fmt"
 
 // define an abstract factory that makes abstract products
 type iAbstractFactory interface {
+	// factory returns an abstract pointer to a concrete object
 	makeProduct() iAbstractProduct
 }
 
 // a free-standing abstract factory constructor
 func newAbstractFactory(factoryAttribute string) (iAbstractFactory, error) {
 	var newFactory = new(concreteFactory)
-	newFactory.attribute = factoryAttribute
+	newFactory.specialAttribute = factoryAttribute
 	return newFactory, nil
 }
 
 // define an abstract product with some behaviours
 type iAbstractProduct interface {
-	setAttribute(attribute string)
-	getAttribute() string
-	setSize(size int)
-	getSize() int
+	setBehaviour(behaviour string)
+	getBehaviour() string
+	setFeature(feature int)
+	getFeature() int
 }
 
 // an abstract product constructor
@@ -32,32 +33,32 @@ func (*concreteFactory) makeProduct() iAbstractProduct {
 
 // define a concrete factory type
 type concreteFactory struct {
-	attribute string
+	specialAttribute string
 }
 
 // define a concrete product type
 type concreteProduct struct {
-	attribute string
-	size      int
+	behaviour string
+	feature   int
 }
 
 // concrete product implementations
 // ---------------------------------
 
-func (item *concreteProduct) setAttribute(attribute string) {
-	item.attribute = attribute
+func (item *concreteProduct) setBehaviour(behaviour string) {
+	item.behaviour = behaviour
 }
 
-func (item *concreteProduct) getAttribute() string {
-	return item.attribute
+func (item *concreteProduct) getBehaviour() string {
+	return item.behaviour
 }
 
-func (item *concreteProduct) setSize(size int) {
-	item.size = size
+func (item *concreteProduct) setFeature(feature int) {
+	item.feature = feature
 }
 
-func (item *concreteProduct) getSize() int {
-	return item.size
+func (item *concreteProduct) getFeature() int {
+	return item.feature
 }
 
 func main() {
@@ -71,10 +72,10 @@ func main() {
 }
 
 // Test Case
-func makeAbstractProduct(prod iAbstractProduct) {
+func makeAbstractProduct(product iAbstractProduct) {
 
-	prod.setAttribute("Special Attribute")
-	prod.setSize(69)
-	fmt.Printf("Product Attribute : %s\n", prod.getAttribute())
-	fmt.Printf("Product Size     : %d\n", prod.getSize())
+	product.setBehaviour("Special Behaviour")
+	product.setFeature(69)
+	fmt.Printf("Product Behaviour : %s\n", product.getBehaviour())
+	fmt.Printf("Product Feature   : %d\n", product.getFeature())
 }
