@@ -6,32 +6,32 @@ hide Client circle
 
 namespace abstract-factory {
     interface iAbstractProduct  {
-        - setBehaviour(behaviour string) 
-        - getBehaviour() string
+        + setBehaviour(behaviour string) 
+        + getBehaviour() string
         ..
-        - setFeature(feature int) 
-        - getFeature() int
+        + setFeature(feature int) 
+        + getFeature() int
 
     }
     interface iAbstractFactory  {
-        - makeProduct() iAbstractProduct
+        + makeProduct() iAbstractProduct
 
     }
     class concreteProduct << (S,Aquamarine) >> {
         - behaviour string
         - feature int
         --
-        - setBehaviour(behaviour string) 
-        - getBehaviour() string
+        + setBehaviour(behaviour string) 
+        + getBehaviour() string
         ..
-        - setFeature(feature int) 
-        - getFeature() int
+        + setFeature(feature int) 
+        + getFeature() int
 
     }
     class concreteFactory << (S,Aquamarine) >> {
         - specialAttribute string
 
-        - makeProduct() iAbstractProduct
+        + makeProduct() iAbstractProduct
     }
 }
 
