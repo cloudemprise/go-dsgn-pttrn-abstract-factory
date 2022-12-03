@@ -5,5 +5,5 @@
 &nbsp;
 
 <p>
-  <img src="./abstract-factory.svg">
+  <img src="./go-dsgn-pttrn-abstract-factory.svg">
 </p>
