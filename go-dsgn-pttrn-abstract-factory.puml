@@ -35,11 +35,11 @@ namespace abstract-factory {
     }
 }
 
-"Client" -[dotted,thickness=2,#royalBlue]-> "abstract-factory.iAbstractFactory"
-"Client" -[dotted,thickness=2,#royalBlue]-> "abstract-factory.iAbstractProduct"
+"Client" -[dashed,thickness=2,#royalBlue]-> "abstract-factory.iAbstractFactory"
+"Client" -[dashed,thickness=2,#royalBlue]-> "abstract-factory.iAbstractProduct"
 
-"abstract-factory.iAbstractFactory" <|-- "abstract-factory.concreteFactory"
-"abstract-factory.iAbstractProduct" <|-- "abstract-factory.concreteProduct"
+"abstract-factory.iAbstractFactory" <|.. "abstract-factory.concreteFactory"
+"abstract-factory.iAbstractProduct" <|.. "abstract-factory.concreteProduct"
 
 note as N1
     <b><color:royalBlue>Abstract Factory</color></b>
@@ -52,11 +52,11 @@ note as N1
     concrete class.
 end note
 
-note right of abstract-factory.iAbstractFactory::iAbstractProduct
+/' note right of abstract-factory.iAbstractFactory::iAbstractProduct
     An abstract factory
     returns an abstract
     pointer to a concrete 
     object.
-end note
+end note '/
 
 @enduml
