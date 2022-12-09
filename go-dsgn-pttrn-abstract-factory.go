@@ -1,23 +1,68 @@
 package main
 
-/* abstract factory */
+/* abstract factory pattern */
 
 import "fmt"
 
-// define an abstract factory that makes abstract products
+// v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v
+// START : An Abstract Factory
+
+// an abstract factory that makes abstract products
 type iAbstractFactory interface {
-	// factory returns an abstract pointer to a concrete object
-	makeProduct() iAbstractProduct
+	// abstract pointers to a concrete objects
+	makeProductA() iAbstractProduct
+	makeProductB() iAbstractProduct
 }
 
-// a free-standing abstract factory constructor
-func newAbstractFactory(factoryAttribute string) (iAbstractFactory, error) {
-	var newFactory = new(concreteFactory)
-	newFactory.specialAttribute = factoryAttribute
-	return newFactory, nil
+// END : An Abstract Factory
+// ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v
+// START : Concrete Factory Function
+
+func createFactory() iAbstractFactory {
+	var factory = new(concreteFactory)
+	return factory
+
 }
 
-// define an abstract product with some behaviours
+// END : Concrete Factory Function
+// ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v
+// START : Concrete Factory Type
+
+// a concrete factory type
+type concreteFactory struct {
+	//specialAttribute string // factory distinction
+}
+
+// concreteFactory method implementation of iAbstractFactory interface.
+func (*concreteFactory) makeProductA() iAbstractProduct {
+	var p = new(concreteProductA)
+	/* 	p.behaviourA = "default"
+	   	p.featureA = 0 */
+	return p
+}
+
+// concreteFactory method implementation of iAbstractFactory interface.
+func (*concreteFactory) makeProductB() iAbstractProduct {
+	var p = new(concreteProductB)
+	/* 	p.behaviourA = "default"
+	   	p.featureA = 0 */
+	return p
+}
+
+// END : Concrete Factory 1 Type
+// ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v
+// START : Abstract Product Interface
+
+// define product behaviours
 type iAbstractProduct interface {
 	setBehaviour(behaviour string)
 	getBehaviour() string
@@ -25,57 +70,131 @@ type iAbstractProduct interface {
 	getFeature() int
 }
 
-// an abstract product constructor
-func (*concreteFactory) makeProduct() iAbstractProduct {
-	var produce = new(concreteProduct)
-	return produce
+// END : Abstract Product Interface
+// ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v
+// START : Concrete Product A Definition
+
+type concreteProductA struct {
+	// products defines similar attributes
+	behaviourA string
+	featureA   int
 }
 
-// define a concrete factory type
-type concreteFactory struct {
-	specialAttribute string
-}
-
-// define a concrete product type
-type concreteProduct struct {
-	behaviour string
-	feature   int
-}
-
-// concrete product implementations
+// Concrete Product A Implementation
 // ---------------------------------
 
-func (item *concreteProduct) setBehaviour(behaviour string) {
-	item.behaviour = behaviour
+func (p *concreteProductA) setBehaviour(behaviour string) {
+	p.behaviourA = behaviour
 }
 
-func (item *concreteProduct) getBehaviour() string {
-	return item.behaviour
+func (p *concreteProductA) getBehaviour() string {
+	return p.behaviourA
 }
 
-func (item *concreteProduct) setFeature(feature int) {
-	item.feature = feature
+func (p *concreteProductA) setFeature(feature int) {
+	p.featureA = feature
 }
 
-func (item *concreteProduct) getFeature() int {
-	return item.feature
+func (p *concreteProductA) getFeature() int {
+	return p.featureA
 }
+
+// END : Concrete Product A Definition
+// ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v
+// START : Concrete Product B Definition
+
+type concreteProductB struct {
+	// products defines similar attributes
+	behaviourB string
+	featureB   int
+}
+
+// Concrete Product B Implementation
+// ---------------------------------
+
+func (p *concreteProductB) setBehaviour(behaviour string) {
+	p.behaviourB = behaviour
+}
+
+func (p *concreteProductB) getBehaviour() string {
+	return p.behaviourB
+}
+
+func (p *concreteProductB) setFeature(feature int) {
+	p.featureB = feature
+}
+
+func (p *concreteProductB) getFeature() int {
+	return p.featureB
+}
+
+// END : Concrete Product B Definition
+// ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v v
+// START : Client Code
 
 func main() {
-	// create a new abstract factory
-	myFactory, _ := newAbstractFactory("myAwesomeBrand")
 
-	// create product from abstract factory
-	myProduct := myFactory.makeProduct()
-	makeAbstractProduct(myProduct)
+	// ---------------------------
+	// create a new factory
+	myFactory1 := createFactory()
+
+	// create a new productA
+	myProductA1 := myFactory1.makeProductA()
+	// specify new productA characteristics
+	myProductA1.setBehaviour("myProductA1")
+	myProductA1.setFeature(12)
+
+	// print
+	getProduct(myProductA1)
+
+	// create a new productB
+	myProductB1 := myFactory1.makeProductB()
+	// specify new productB characteristics
+	myProductB1.setBehaviour("myProductB1")
+	myProductB1.setFeature(34)
+
+	// print
+	getProduct(myProductB1)
+
+	// ---------------------------
+	// create a different factory
+	myFactory2 := createFactory()
+
+	// create a new productA
+	myProductA2 := myFactory2.makeProductA()
+	// specify new productA characteristics
+	myProductA2.setBehaviour("myProductA2")
+	myProductA1.setFeature(56)
+
+	// print
+	getProduct(myProductA1)
+
+	// create a new productB
+	myProductB2 := myFactory2.makeProductB()
+	// specify new productB characteristics
+	myProductB2.setBehaviour("myProductB2")
+	myProductB2.setFeature(78)
+
+	// print
+	getProduct(myProductB2)
 
 }
 
-// Test Case
-func makeAbstractProduct(product iAbstractProduct) {
-
-	product.setBehaviour("Special Behaviour")
-	product.setFeature(69)
-	fmt.Printf("Product Behaviour : %s\n", product.getBehaviour())
-	fmt.Printf("Product Feature   : %d\n", product.getFeature())
+// Test helper
+func getProduct(p iAbstractProduct) {
+	fmt.Println(p.getBehaviour())
+	fmt.Println(p.getFeature())
 }
+
+// END : Client Code
+// ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

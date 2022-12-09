@@ -1,62 +1,93 @@
-@startuml abstract-factory
-
-class Client #line.bold:royalBlue
-hide Client members
-hide Client circle
+@startuml go-dsgn-pttrn-abstract-factory
 
 namespace abstract-factory {
-    interface iAbstractProduct  {
+
+
+    class concreteProductA << (S,Aquamarine) >> {
+        - behaviourA string
+        - featureA int
+
         + setBehaviour(behaviour string) 
         + getBehaviour() string
-        ..
         + setFeature(feature int) 
         + getFeature() int
 
     }
+
+    class concreteProductB << (S,Aquamarine) >> {
+        - behaviourB string
+        - featureB int
+
+        + setBehaviour(behaviour string) 
+        + getBehaviour() string
+        + setFeature(feature int) 
+        + getFeature() int
+
+    }
+
     interface iAbstractFactory  {
-        + makeProduct() iAbstractProduct
+
+        + makeProductA() iAbstractProduct
+        + makeProductB() iAbstractProduct
 
     }
-    class concreteProduct << (S,Aquamarine) >> {
-        - behaviour string
-        - feature int
-        --
+
+    interface iAbstractProduct  {
+
         + setBehaviour(behaviour string) 
         + getBehaviour() string
-        ..
         + setFeature(feature int) 
         + getFeature() int
 
     }
-    class concreteFactory << (S,Aquamarine) >> {
-        - specialAttribute string
 
-        + makeProduct() iAbstractProduct
+    object Factory {
+
     }
+
+    class client {
+
+        + createFactory() iAbstractFactory
+    }
+
+
+    object ProductA {
+
+    }
+
+    class concreteFactory << (S,Aquamarine) >> {
+        + makeProductA() iAbstractProduct
+        + makeProductB() iAbstractProduct
+
+    }
+
+    object ProductB {
+
+    }
+
 }
 
-"Client" -[dashed,thickness=2,#royalBlue]-> "abstract-factory.iAbstractFactory"
-"Client" -[dashed,thickness=2,#royalBlue]-> "abstract-factory.iAbstractProduct"
+Factory <.. "abstract-factory.client"
+
+'"abstract-factory.client" ..> "ProductA"
+Factory ..> "ProductA"
+ProductA <.. "abstract-factory.concreteProductA"
+ProductA -[hidden]- "abstract-factory.iAbstractProduct"
+
+'"abstract-factory.client" ..> "ProductB"
+Factory ..> "ProductB"
+ProductB <.. "abstract-factory.concreteProductB"
+ProductB -[hidden]- "abstract-factory.iAbstractProduct"
+
+"abstract-factory.client" o--> "abstract-factory.iAbstractFactory"
+"abstract-factory.concreteFactory" --> "abstract-factory.iAbstractProduct"
 
 "abstract-factory.iAbstractFactory" <|.. "abstract-factory.concreteFactory"
-"abstract-factory.iAbstractProduct" <|.. "abstract-factory.concreteProduct"
+"abstract-factory.iAbstractProduct" <|.. "abstract-factory.concreteProductA"
+"abstract-factory.iAbstractProduct" <|.. "abstract-factory.concreteProductB"
 
-note as N1
-    <b><color:royalBlue>Abstract Factory</color></b>
-
-    <b>Type:</b> Creational
-
-    Provides an interface for creating
-    families of related or dependent
-    objects without specifying their
-    concrete class.
-end note
-
-/' note right of abstract-factory.iAbstractFactory::iAbstractProduct
-    An abstract factory
-    returns an abstract
-    pointer to a concrete 
-    object.
-end note '/
+note "distinct products" as N2
+"abstract-factory.concreteProductA" <.[dotted]. N2
+N2 .[dotted].> "abstract-factory.concreteProductB"
 
 @enduml
