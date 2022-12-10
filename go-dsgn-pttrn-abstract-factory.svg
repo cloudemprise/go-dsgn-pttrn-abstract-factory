@@ -1,208 +1,94 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="954px" preserveAspectRatio="none" style="width:556px;height:954px;background:#FFFFFF;" version="1.1" viewBox="0 0 556 954" width="556px" zoomAndPan="magnify"><defs/><g><!--MD5=[359537f366b8bb5eb5abd913e65f0a43]
-cluster abstract-factory--><g id="cluster_abstract-factory"><path d="M8.5,6 L136.5,6 A3.75,3.75 0 0 1 139,8.5 L146,28.2969 L546.5,28.2969 A2.5,2.5 0 0 1 549,30.7969 L549,875.5 A2.5,2.5 0 0 1 546.5,878 L8.5,878 A2.5,2.5 0 0 1 6,875.5 L6,8.5 A2.5,2.5 0 0 1 8.5,6 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="6" x2="146" y1="28.2969" y2="28.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="127" x="10" y="20.9951">abstract-factory</text></g><!--MD5=[e0bd0a71874c14fbdf0c8db17146b1d4]
-class abstract-factory.concreteProductA--><g id="elem_abstract-factory.concreteProductA"><rect codeLine="5" fill="#F1F1F1" height="145.7813" id="abstract-factory.concreteProductA" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="238" x="22" y="716"/><ellipse cx="74.25" cy="732" fill="#7FFFD4" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M73.7344,732.5625 Q71.875,731.8594 71.2188,731.0938 Q70.5781,730.3125 70.5781,729 Q70.5781,727.3125 71.6563,726.3438 Q72.7344,725.375 74.6094,725.375 Q75.4688,725.375 76.3125,725.5781 Q77.1719,725.7656 78.0156,726.1563 L78.0156,728.5469 Q77.2344,727.9844 76.4063,727.7031 Q75.5938,727.4063 74.7969,727.4063 Q73.9219,727.4063 73.4375,727.7656 Q72.9688,728.125 72.9688,728.7813 Q72.9688,729.2969 73.3125,729.6406 Q73.6563,729.9688 74.75,730.375 L75.8125,730.7813 Q77.2969,731.3281 78,732.2344 Q78.7188,733.1406 78.7188,734.5156 Q78.7188,736.3906 77.6094,737.3125 Q76.5,738.2344 74.25,738.2344 Q73.3281,738.2344 72.4063,738.0156 Q71.4844,737.7969 70.625,737.375 L70.625,734.8438 Q71.5938,735.5313 72.5156,735.875 Q73.4375,736.2188 74.3281,736.2188 Q75.2344,736.2188 75.7344,735.8125 Q76.2344,735.3906 76.2344,734.6563 Q76.2344,734.0938 75.8906,733.6875 Q75.5625,733.2656 74.9375,733.0156 L73.7344,732.5625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="125" x="94.75" y="736.8467">concreteProductA</text><line style="stroke:#181818;stroke-width:0.5;" x1="23" x2="259" y1="748" y2="748"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="30" y="758.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="42" y="764.9951">behaviourA string</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="30" y="774.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="42" y="781.292">featureA int</text><line style="stroke:#181818;stroke-width:0.5;" x1="23" x2="259" y1="788.5938" y2="788.5938"/><ellipse cx="33" cy="802.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="212" x="42" y="805.5889">setBehaviour(behaviour string)</text><ellipse cx="33" cy="818.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="42" y="821.8857">getBehaviour() string</text><ellipse cx="33" cy="834.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="42" y="838.1826">setFeature(feature int)</text><ellipse cx="33" cy="851.1328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="42" y="854.4795">getFeature() int</text></g><!--MD5=[1c24c757525d3ea481e94b13ba55ddf5]
-class abstract-factory.concreteProductB--><g id="elem_abstract-factory.concreteProductB"><rect codeLine="16" fill="#F1F1F1" height="145.7813" id="abstract-factory.concreteProductB" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="238" x="295" y="716"/><ellipse cx="346.75" cy="732" fill="#7FFFD4" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M346.2344,732.5625 Q344.375,731.8594 343.7188,731.0938 Q343.0781,730.3125 343.0781,729 Q343.0781,727.3125 344.1563,726.3438 Q345.2344,725.375 347.1094,725.375 Q347.9688,725.375 348.8125,725.5781 Q349.6719,725.7656 350.5156,726.1563 L350.5156,728.5469 Q349.7344,727.9844 348.9063,727.7031 Q348.0938,727.4063 347.2969,727.4063 Q346.4219,727.4063 345.9375,727.7656 Q345.4688,728.125 345.4688,728.7813 Q345.4688,729.2969 345.8125,729.6406 Q346.1563,729.9688 347.25,730.375 L348.3125,730.7813 Q349.7969,731.3281 350.5,732.2344 Q351.2188,733.1406 351.2188,734.5156 Q351.2188,736.3906 350.1094,737.3125 Q349,738.2344 346.75,738.2344 Q345.8281,738.2344 344.9063,738.0156 Q343.9844,737.7969 343.125,737.375 L343.125,734.8438 Q344.0938,735.5313 345.0156,735.875 Q345.9375,736.2188 346.8281,736.2188 Q347.7344,736.2188 348.2344,735.8125 Q348.7344,735.3906 348.7344,734.6563 Q348.7344,734.0938 348.3906,733.6875 Q348.0625,733.2656 347.4375,733.0156 L346.2344,732.5625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="367.25" y="736.8467">concreteProductB</text><line style="stroke:#181818;stroke-width:0.5;" x1="296" x2="532" y1="748" y2="748"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="303" y="758.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="315" y="764.9951">behaviourB string</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="303" y="774.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="315" y="781.292">featureB int</text><line style="stroke:#181818;stroke-width:0.5;" x1="296" x2="532" y1="788.5938" y2="788.5938"/><ellipse cx="306" cy="802.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="212" x="315" y="805.5889">setBehaviour(behaviour string)</text><ellipse cx="306" cy="818.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="315" y="821.8857">getBehaviour() string</text><ellipse cx="306" cy="834.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="315" y="838.1826">setFeature(feature int)</text><ellipse cx="306" cy="851.1328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="315" y="854.4795">getFeature() int</text></g><!--MD5=[78b9e3573ef076e0d1b31c53c8b861ba]
-class abstract-factory.iAbstractFactory--><g id="elem_abstract-factory.iAbstractFactory"><rect codeLine="27" fill="#F1F1F1" height="80.5938" id="abstract-factory.iAbstractFactory" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="256" x="149" y="261"/><ellipse cx="217.75" cy="277" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M213.6719,272.7656 L213.6719,270.6094 L221.0625,270.6094 L221.0625,272.7656 L218.5938,272.7656 L218.5938,280.8438 L221.0625,280.8438 L221.0625,283 L213.6719,283 L213.6719,280.8438 L216.1406,280.8438 L216.1406,272.7656 L213.6719,272.7656 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="110" x="238.25" y="281.8467">iAbstractFactory</text><line style="stroke:#181818;stroke-width:0.5;" x1="150" x2="404" y1="293" y2="293"/><line style="stroke:#181818;stroke-width:0.5;" x1="150" x2="404" y1="301" y2="301"/><ellipse cx="160" cy="314.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="229" x="169" y="317.9951">makeProductA() iAbstractProduct</text><ellipse cx="160" cy="330.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="230" x="169" y="334.292">makeProductB() iAbstractProduct</text></g><!--MD5=[e93776c1f719cbff8148f72ed62fb523]
-class abstract-factory.iAbstractProduct--><g id="elem_abstract-factory.iAbstractProduct"><rect codeLine="34" fill="#F1F1F1" height="113.1875" id="abstract-factory.iAbstractProduct" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="238" x="158" y="543"/><ellipse cx="215.75" cy="559" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M211.6719,554.7656 L211.6719,552.6094 L219.0625,552.6094 L219.0625,554.7656 L216.5938,554.7656 L216.5938,562.8438 L219.0625,562.8438 L219.0625,565 L211.6719,565 L211.6719,562.8438 L214.1406,562.8438 L214.1406,554.7656 L211.6719,554.7656 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="114" x="236.25" y="563.8467">iAbstractProduct</text><line style="stroke:#181818;stroke-width:0.5;" x1="159" x2="395" y1="575" y2="575"/><line style="stroke:#181818;stroke-width:0.5;" x1="159" x2="395" y1="583" y2="583"/><ellipse cx="169" cy="596.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="212" x="178" y="599.9951">setBehaviour(behaviour string)</text><ellipse cx="169" cy="612.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="178" y="616.292">getBehaviour() string</text><ellipse cx="169" cy="629.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="178" y="632.5889">setFeature(feature int)</text><ellipse cx="169" cy="645.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="178" y="648.8857">getFeature() int</text></g><g id="elem_Factory"><rect fill="#F1F1F1" height="36.2969" style="stroke:#181818;stroke-width:0.5;" width="64" x="245" y="41"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="252" y="55.9951">Factory</text><line style="stroke:#181818;stroke-width:0.5;" x1="246" x2="308" y1="61.2969" y2="61.2969"/></g><!--MD5=[62fb470520cc53b6a726d8ae328a3ea5]
-class abstract-factory.client--><g id="elem_abstract-factory.client"><rect codeLine="47" fill="#F1F1F1" height="64.2969" id="abstract-factory.client" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="244" x="155" y="137"/><ellipse cx="254.25" cy="153" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M257.2188,158.6406 Q256.6406,158.9375 256,159.0781 Q255.3594,159.2344 254.6563,159.2344 Q252.1563,159.2344 250.8281,157.5938 Q249.5156,155.9375 249.5156,152.8125 Q249.5156,149.6875 250.8281,148.0313 Q252.1563,146.375 254.6563,146.375 Q255.3594,146.375 256,146.5313 Q256.6563,146.6875 257.2188,146.9844 L257.2188,149.7031 Q256.5938,149.125 256,148.8594 Q255.4063,148.5781 254.7813,148.5781 Q253.4375,148.5781 252.75,149.6563 Q252.0625,150.7188 252.0625,152.8125 Q252.0625,154.9063 252.75,155.9844 Q253.4375,157.0469 254.7813,157.0469 Q255.4063,157.0469 256,156.7813 Q256.5938,156.5 257.2188,155.9219 L257.2188,158.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="274.75" y="157.8467">client</text><line style="stroke:#181818;stroke-width:0.5;" x1="156" x2="398" y1="169" y2="169"/><line style="stroke:#181818;stroke-width:0.5;" x1="156" x2="398" y1="177" y2="177"/><ellipse cx="166" cy="190.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="218" x="175" y="193.9951">createFactory() iAbstractFactory</text></g><g id="elem_ProductA"><rect fill="#F1F1F1" height="36.2969" style="stroke:#181818;stroke-width:0.5;" width="77" x="36.5" y="424.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="43.5" y="439.4951">ProductA</text><line style="stroke:#181818;stroke-width:0.5;" x1="37.5" x2="112.5" y1="444.7969" y2="444.7969"/></g><!--MD5=[450f67c793b5fc856f9ea5f48e240f3b]
-class abstract-factory.concreteFactory--><g id="elem_abstract-factory.concreteFactory"><rect codeLine="57" fill="#F1F1F1" height="80.5938" id="abstract-factory.concreteFactory" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="256" x="149" y="402"/><ellipse cx="216.75" cy="418" fill="#7FFFD4" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M216.2344,418.5625 Q214.375,417.8594 213.7188,417.0938 Q213.0781,416.3125 213.0781,415 Q213.0781,413.3125 214.1563,412.3438 Q215.2344,411.375 217.1094,411.375 Q217.9688,411.375 218.8125,411.5781 Q219.6719,411.7656 220.5156,412.1563 L220.5156,414.5469 Q219.7344,413.9844 218.9063,413.7031 Q218.0938,413.4063 217.2969,413.4063 Q216.4219,413.4063 215.9375,413.7656 Q215.4688,414.125 215.4688,414.7813 Q215.4688,415.2969 215.8125,415.6406 Q216.1563,415.9688 217.25,416.375 L218.3125,416.7813 Q219.7969,417.3281 220.5,418.2344 Q221.2188,419.1406 221.2188,420.5156 Q221.2188,422.3906 220.1094,423.3125 Q219,424.2344 216.75,424.2344 Q215.8281,424.2344 214.9063,424.0156 Q213.9844,423.7969 213.125,423.375 L213.125,420.8438 Q214.0938,421.5313 215.0156,421.875 Q215.9375,422.2188 216.8281,422.2188 Q217.7344,422.2188 218.2344,421.8125 Q218.7344,421.3906 218.7344,420.6563 Q218.7344,420.0938 218.3906,419.6875 Q218.0625,419.2656 217.4375,419.0156 L216.2344,418.5625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112" x="237.25" y="422.8467">concreteFactory</text><line style="stroke:#181818;stroke-width:0.5;" x1="150" x2="404" y1="434" y2="434"/><line style="stroke:#181818;stroke-width:0.5;" x1="150" x2="404" y1="442" y2="442"/><ellipse cx="160" cy="455.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="229" x="169" y="458.9951">makeProductA() iAbstractProduct</text><ellipse cx="160" cy="471.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="230" x="169" y="475.292">makeProductB() iAbstractProduct</text></g><g id="elem_ProductB"><rect fill="#F1F1F1" height="36.2969" style="stroke:#181818;stroke-width:0.5;" width="78" x="440" y="424.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="447" y="439.4951">ProductB</text><line style="stroke:#181818;stroke-width:0.5;" x1="441" x2="517" y1="444.7969" y2="444.7969"/></g><g id="elem_N2"><path d="M213.5,922 L213.5,947.1328 L340.5,947.1328 L340.5,932 L330.5,922 L213.5,922 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M330.5,922 L330.5,932 L340.5,932 L330.5,922 " fill="#FEFFDD" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="106" x="219.5" y="939.0669">distinct products</text></g><!--MD5=[9030d536f41f881ffb65a0e4ee64badf]
-reverse link Factory to abstract-factory.client--><g id="link_Factory_abstract-factory.client"><path codeLine="69" d="M277,82.46 C277,98.18 277,119.38 277,136.75 " fill="none" id="Factory-backto-abstract-factory.client" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="277,77.35,273,86.35,277,82.35,281,86.35,277,77.35" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[7c85439b43f6896b7717621391c8d0de]
-link Factory to ProductA--><g id="link_Factory_ProductA"><path codeLine="72" d="M244.96,69.06 C212.82,79.86 164.41,101.12 138,137 C73.03,225.27 71.49,365.05 73.63,419.12 " fill="none" id="Factory-to-ProductA" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="73.86,424.38,77.471,415.217,73.6459,419.3846,69.4783,415.5595,73.86,424.38" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[8ad437c8386b1c0f6f27724acdb19fdb]
-reverse link ProductA to abstract-factory.concreteProductA--><g id="link_ProductA_abstract-factory.concreteProductA"><path codeLine="73" d="M79.26,465.71 C88.76,515.33 112.06,636.96 127.17,715.8 " fill="none" id="ProductA-backto-abstract-factory.concreteProductA" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="78.27,460.58,76.0157,470.1674,79.201,465.4926,83.8758,468.6779,78.27,460.58" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[dd61a7b5a074fdb13ba4209954808039]
-link ProductA to abstract-factory.iAbstractProduct--><!--MD5=[d4e9478bef55ff017e4123dba8a149ae]
-link Factory to ProductB--><g id="link_Factory_ProductB"><path codeLine="77" d="M309.29,68.98 C341.68,79.72 390.45,100.92 417,137 C481.92,225.22 482.86,365.03 480.47,419.11 " fill="none" id="Factory-to-ProductB" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="480.22,424.38,484.6519,415.5847,480.4626,419.3859,476.6613,415.1965,480.22,424.38" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[c7b8abd85d96a56cb156b346c0455f64]
-reverse link ProductB to abstract-factory.concreteProductB--><g id="link_ProductB_abstract-factory.concreteProductB"><path codeLine="78" d="M474.81,465.71 C465.45,515.33 442.5,636.96 427.62,715.8 " fill="none" id="ProductB-backto-abstract-factory.concreteProductB" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="475.78,460.58,470.1785,468.6808,474.8517,465.4931,478.0394,470.1662,475.78,460.58" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[ea5dd4f06129d3668dfdb9faceaeceea]
-link ProductB to abstract-factory.iAbstractProduct--><!--MD5=[a18177038dd097bcedcb6524ca845734]
-link abstract-factory.client to abstract-factory.iAbstractFactory--><g id="link_abstract-factory.client_abstract-factory.iAbstractFactory"><path codeLine="81" d="M277,213.26 C277,213.26 277,236.54 277,247.52 " fill="none" id="abstract-factory.client-abstract-factory.iAbstractFactory" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="277,201.26,273,207.26,277,213.26,281,207.26,277,201.26" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="277,260.59,281,251.59,277,255.59,273,251.59,277,260.59" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="277" x2="277" y1="255.59" y2="247.59"/></g><!--MD5=[c03ae3620daa23e8d5ef4e2ee1051c7a]
-link abstract-factory.concreteFactory to abstract-factory.iAbstractProduct--><g id="link_abstract-factory.concreteFactory_abstract-factory.iAbstractProduct"><path codeLine="82" d="M277,483.01 C277,499.66 277,519.4 277,537.82 " fill="none" id="abstract-factory.concreteFactory-to-abstract-factory.iAbstractProduct" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="277,542.98,281,533.98,277,537.98,273,533.98,277,542.98" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[de3a74455e542ee0e7f9f9573c1f3a6f]
-reverse link abstract-factory.iAbstractFactory to abstract-factory.concreteFactory--><g id="link_abstract-factory.iAbstractFactory_abstract-factory.concreteFactory"><path codeLine="84" d="M277,362.48 C277,375.73 277,389.45 277,401.66 " fill="none" id="abstract-factory.iAbstractFactory-backto-abstract-factory.concreteFactory" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="270,362.33,277,342.33,284,362.33,270,362.33" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[7874b25a087a04d3e2e370820b5c6bb2]
-reverse link abstract-factory.iAbstractProduct to abstract-factory.concreteProductA--><g id="link_abstract-factory.iAbstractProduct_abstract-factory.concreteProductA"><path codeLine="85" d="M224.78,672.5 C214.49,686.68 203.69,701.58 193.39,715.77 " fill="none" id="abstract-factory.iAbstractProduct-backto-abstract-factory.concreteProductA" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="219.15,668.33,236.56,656.25,230.49,676.55,219.15,668.33" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[b850a3d99c66449a822d682f6b2fa495]
-reverse link abstract-factory.iAbstractProduct to abstract-factory.concreteProductB--><g id="link_abstract-factory.iAbstractProduct_abstract-factory.concreteProductB"><path codeLine="86" d="M329.61,672.5 C339.97,686.68 350.85,701.58 361.22,715.77 " fill="none" id="abstract-factory.iAbstractProduct-backto-abstract-factory.concreteProductB" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="323.88,676.53,317.73,656.25,335.18,668.27,323.88,676.53" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[c2b09f807a402a7b716833c012186248]
-reverse link abstract-factory.concreteProductA to N2--><g id="link_abstract-factory.concreteProductA_N2"><path codeLine="89" d="M213,865.97 C233.73,887.84 253.96,909.19 265.95,921.84 " fill="none" id="abstract-factory.concreteProductA-backto-N2" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:1.0,3.0;"/><polygon fill="#181818" points="209.4,862.17,212.6737,871.4589,212.834,865.8043,218.4885,865.9645,209.4,862.17" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[cc3d41c088fd4bb12ad84a95671f3a11]
-link N2 to abstract-factory.concreteProductB--><g id="link_N2_abstract-factory.concreteProductB"><path codeLine="90" d="M288.13,921.84 C300.21,909.19 320.59,887.84 341.47,865.97 " fill="none" id="N2-to-abstract-factory.concreteProductB" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:1.0,3.0;"/><polygon fill="#181818" points="345.1,862.17,335.9884,865.9089,341.6439,865.7832,341.7696,871.4387,345.1,862.17" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[feae0f0a961460dd9500118dde80be0f]
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="789px" preserveAspectRatio="none" style="width:612px;height:789px;background:#FFFFFF;" version="1.1" viewBox="0 0 612 789" width="612px" zoomAndPan="magnify"><defs/><g><!--MD5=[359537f366b8bb5eb5abd913e65f0a43]
+cluster abstract-factory--><g id="cluster_abstract-factory"><path d="M8.5,6 L136.5,6 A3.75,3.75 0 0 1 139,8.5 L146,28.2969 L602.5,28.2969 A2.5,2.5 0 0 1 605,30.7969 L605,779.5 A2.5,2.5 0 0 1 602.5,782 L8.5,782 A2.5,2.5 0 0 1 6,779.5 L6,8.5 A2.5,2.5 0 0 1 8.5,6 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="6" x2="146" y1="28.2969" y2="28.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="127" x="10" y="20.9951">abstract-factory</text></g><!--MD5=[4ec91990d98f638bb915159918a1db32]
+class abstract-factory.concreteFactory1--><g id="elem_abstract-factory.concreteFactory1"><rect codeLine="3" fill="#F1F1F1" height="80.5938" id="abstract-factory.concreteFactory1" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="266" x="22" y="306"/><ellipse cx="90.25" cy="322" fill="#7FFFD4" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M89.7344,322.5625 Q87.875,321.8594 87.2188,321.0938 Q86.5781,320.3125 86.5781,319 Q86.5781,317.3125 87.6563,316.3438 Q88.7344,315.375 90.6094,315.375 Q91.4688,315.375 92.3125,315.5781 Q93.1719,315.7656 94.0156,316.1563 L94.0156,318.5469 Q93.2344,317.9844 92.4063,317.7031 Q91.5938,317.4063 90.7969,317.4063 Q89.9219,317.4063 89.4375,317.7656 Q88.9688,318.125 88.9688,318.7813 Q88.9688,319.2969 89.3125,319.6406 Q89.6563,319.9688 90.75,320.375 L91.8125,320.7813 Q93.2969,321.3281 94,322.2344 Q94.7188,323.1406 94.7188,324.5156 Q94.7188,326.3906 93.6094,327.3125 Q92.5,328.2344 90.25,328.2344 Q89.3281,328.2344 88.4063,328.0156 Q87.4844,327.7969 86.625,327.375 L86.625,324.8438 Q87.5938,325.5313 88.5156,325.875 Q89.4375,326.2188 90.3281,326.2188 Q91.2344,326.2188 91.7344,325.8125 Q92.2344,325.3906 92.2344,324.6563 Q92.2344,324.0938 91.8906,323.6875 Q91.5625,323.2656 90.9375,323.0156 L89.7344,322.5625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="110.75" y="326.8467">concreteFactory1</text><line style="stroke:#181818;stroke-width:0.5;" x1="23" x2="287" y1="338" y2="338"/><line style="stroke:#181818;stroke-width:0.5;" x1="23" x2="287" y1="346" y2="346"/><ellipse cx="33" cy="359.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="238" x="42" y="362.9951">makeProductA() iAbstractProductA</text><ellipse cx="33" cy="375.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="240" x="42" y="379.292">makeProductB() iAbstractProductB</text></g><!--MD5=[7d87fb970fda150a1a7e8d6b55c99a1f]
+class abstract-factory.concreteFactory2--><g id="elem_abstract-factory.concreteFactory2"><rect codeLine="8" fill="#F1F1F1" height="80.5938" id="abstract-factory.concreteFactory2" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="266" x="323" y="306"/><ellipse cx="391.25" cy="322" fill="#7FFFD4" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M390.7344,322.5625 Q388.875,321.8594 388.2188,321.0938 Q387.5781,320.3125 387.5781,319 Q387.5781,317.3125 388.6563,316.3438 Q389.7344,315.375 391.6094,315.375 Q392.4688,315.375 393.3125,315.5781 Q394.1719,315.7656 395.0156,316.1563 L395.0156,318.5469 Q394.2344,317.9844 393.4063,317.7031 Q392.5938,317.4063 391.7969,317.4063 Q390.9219,317.4063 390.4375,317.7656 Q389.9688,318.125 389.9688,318.7813 Q389.9688,319.2969 390.3125,319.6406 Q390.6563,319.9688 391.75,320.375 L392.8125,320.7813 Q394.2969,321.3281 395,322.2344 Q395.7188,323.1406 395.7188,324.5156 Q395.7188,326.3906 394.6094,327.3125 Q393.5,328.2344 391.25,328.2344 Q390.3281,328.2344 389.4063,328.0156 Q388.4844,327.7969 387.625,327.375 L387.625,324.8438 Q388.5938,325.5313 389.5156,325.875 Q390.4375,326.2188 391.3281,326.2188 Q392.2344,326.2188 392.7344,325.8125 Q393.2344,325.3906 393.2344,324.6563 Q393.2344,324.0938 392.8906,323.6875 Q392.5625,323.2656 391.9375,323.0156 L390.7344,322.5625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="411.75" y="326.8467">concreteFactory2</text><line style="stroke:#181818;stroke-width:0.5;" x1="324" x2="588" y1="338" y2="338"/><line style="stroke:#181818;stroke-width:0.5;" x1="324" x2="588" y1="346" y2="346"/><ellipse cx="334" cy="359.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="238" x="343" y="362.9951">makeProductA() iAbstractProductA</text><ellipse cx="334" cy="375.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="240" x="343" y="379.292">makeProductB() iAbstractProductB</text></g><!--MD5=[e0bd0a71874c14fbdf0c8db17146b1d4]
+class abstract-factory.concreteProductA--><g id="elem_abstract-factory.concreteProductA"><rect codeLine="13" fill="#F1F1F1" height="145.7813" id="abstract-factory.concreteProductA" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="247" x="35.5" y="620"/><ellipse cx="92.25" cy="636" fill="#7FFFD4" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M91.7344,636.5625 Q89.875,635.8594 89.2188,635.0938 Q88.5781,634.3125 88.5781,633 Q88.5781,631.3125 89.6563,630.3438 Q90.7344,629.375 92.6094,629.375 Q93.4688,629.375 94.3125,629.5781 Q95.1719,629.7656 96.0156,630.1563 L96.0156,632.5469 Q95.2344,631.9844 94.4063,631.7031 Q93.5938,631.4063 92.7969,631.4063 Q91.9219,631.4063 91.4375,631.7656 Q90.9688,632.125 90.9688,632.7813 Q90.9688,633.2969 91.3125,633.6406 Q91.6563,633.9688 92.75,634.375 L93.8125,634.7813 Q95.2969,635.3281 96,636.2344 Q96.7188,637.1406 96.7188,638.5156 Q96.7188,640.3906 95.6094,641.3125 Q94.5,642.2344 92.25,642.2344 Q91.3281,642.2344 90.4063,642.0156 Q89.4844,641.7969 88.625,641.375 L88.625,638.8438 Q89.5938,639.5313 90.5156,639.875 Q91.4375,640.2188 92.3281,640.2188 Q93.2344,640.2188 93.7344,639.8125 Q94.2344,639.3906 94.2344,638.6563 Q94.2344,638.0938 93.8906,637.6875 Q93.5625,637.2656 92.9375,637.0156 L91.7344,636.5625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="125" x="112.75" y="640.8467">concreteProductA</text><line style="stroke:#181818;stroke-width:0.5;" x1="36.5" x2="281.5" y1="652" y2="652"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="43.5" y="662.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="55.5" y="668.9951">behaviourA string</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="43.5" y="678.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="55.5" y="685.292">featureA int</text><line style="stroke:#181818;stroke-width:0.5;" x1="36.5" x2="281.5" y1="692.5938" y2="692.5938"/><ellipse cx="46.5" cy="706.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="221" x="55.5" y="709.5889">setBehaviourA(behaviour string)</text><ellipse cx="46.5" cy="722.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="154" x="55.5" y="725.8857">getBehaviourA() string</text><ellipse cx="46.5" cy="738.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="164" x="55.5" y="742.1826">setFeatureA(feature int)</text><ellipse cx="46.5" cy="755.1328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="55.5" y="758.4795">getFeatureA() int</text></g><!--MD5=[1c24c757525d3ea481e94b13ba55ddf5]
+class abstract-factory.concreteProductB--><g id="elem_abstract-factory.concreteProductB"><rect codeLine="23" fill="#F1F1F1" height="145.7813" id="abstract-factory.concreteProductB" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="248" x="327" y="620"/><ellipse cx="383.75" cy="636" fill="#7FFFD4" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M383.2344,636.5625 Q381.375,635.8594 380.7188,635.0938 Q380.0781,634.3125 380.0781,633 Q380.0781,631.3125 381.1563,630.3438 Q382.2344,629.375 384.1094,629.375 Q384.9688,629.375 385.8125,629.5781 Q386.6719,629.7656 387.5156,630.1563 L387.5156,632.5469 Q386.7344,631.9844 385.9063,631.7031 Q385.0938,631.4063 384.2969,631.4063 Q383.4219,631.4063 382.9375,631.7656 Q382.4688,632.125 382.4688,632.7813 Q382.4688,633.2969 382.8125,633.6406 Q383.1563,633.9688 384.25,634.375 L385.3125,634.7813 Q386.7969,635.3281 387.5,636.2344 Q388.2188,637.1406 388.2188,638.5156 Q388.2188,640.3906 387.1094,641.3125 Q386,642.2344 383.75,642.2344 Q382.8281,642.2344 381.9063,642.0156 Q380.9844,641.7969 380.125,641.375 L380.125,638.8438 Q381.0938,639.5313 382.0156,639.875 Q382.9375,640.2188 383.8281,640.2188 Q384.7344,640.2188 385.2344,639.8125 Q385.7344,639.3906 385.7344,638.6563 Q385.7344,638.0938 385.3906,637.6875 Q385.0625,637.2656 384.4375,637.0156 L383.2344,636.5625 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="404.25" y="640.8467">concreteProductB</text><line style="stroke:#181818;stroke-width:0.5;" x1="328" x2="574" y1="652" y2="652"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="335" y="662.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="347" y="668.9951">behaviourB string</text><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="335" y="678.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="347" y="685.292">featureB int</text><line style="stroke:#181818;stroke-width:0.5;" x1="328" x2="574" y1="692.5938" y2="692.5938"/><ellipse cx="338" cy="706.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="222" x="347" y="709.5889">setBehaviourB(behaviour string)</text><ellipse cx="338" cy="722.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="347" y="725.8857">getBehaviourB() string</text><ellipse cx="338" cy="738.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="165" x="347" y="742.1826">setFeatureB(feature int)</text><ellipse cx="338" cy="755.1328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="347" y="758.4795">getFeatureB() int</text></g><!--MD5=[78b9e3573ef076e0d1b31c53c8b861ba]
+class abstract-factory.iAbstractFactory--><g id="elem_abstract-factory.iAbstractFactory"><rect codeLine="33" fill="#F1F1F1" height="80.5938" id="abstract-factory.iAbstractFactory" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="266" x="172" y="165"/><ellipse cx="245.75" cy="181" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M241.6719,176.7656 L241.6719,174.6094 L249.0625,174.6094 L249.0625,176.7656 L246.5938,176.7656 L246.5938,184.8438 L249.0625,184.8438 L249.0625,187 L241.6719,187 L241.6719,184.8438 L244.1406,184.8438 L244.1406,176.7656 L241.6719,176.7656 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="110" x="266.25" y="185.8467">iAbstractFactory</text><line style="stroke:#181818;stroke-width:0.5;" x1="173" x2="437" y1="197" y2="197"/><line style="stroke:#181818;stroke-width:0.5;" x1="173" x2="437" y1="205" y2="205"/><ellipse cx="183" cy="218.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="238" x="192" y="221.9951">makeProductA() iAbstractProductA</text><ellipse cx="183" cy="234.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="240" x="192" y="238.292">makeProductB() iAbstractProductB</text></g><!--MD5=[7a147e5efa15393783cbcdc2c1d58ed0]
+class abstract-factory.iAbstractProductA--><g id="elem_abstract-factory.iAbstractProductA"><rect codeLine="38" fill="#F1F1F1" height="113.1875" id="abstract-factory.iAbstractProductA" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="247" x="35.5" y="447"/><ellipse cx="93.25" cy="463" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M89.1719,458.7656 L89.1719,456.6094 L96.5625,456.6094 L96.5625,458.7656 L94.0938,458.7656 L94.0938,466.8438 L96.5625,466.8438 L96.5625,469 L89.1719,469 L89.1719,466.8438 L91.6406,466.8438 L91.6406,458.7656 L89.1719,458.7656 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="123" x="113.75" y="467.8467">iAbstractProductA</text><line style="stroke:#181818;stroke-width:0.5;" x1="36.5" x2="281.5" y1="479" y2="479"/><line style="stroke:#181818;stroke-width:0.5;" x1="36.5" x2="281.5" y1="487" y2="487"/><ellipse cx="46.5" cy="500.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="221" x="55.5" y="503.9951">setBehaviourA(behaviour string)</text><ellipse cx="46.5" cy="516.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="154" x="55.5" y="520.292">getBehaviourA() string</text><ellipse cx="46.5" cy="533.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="164" x="55.5" y="536.5889">setFeatureA(feature int)</text><ellipse cx="46.5" cy="549.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="55.5" y="552.8857">getFeatureA() int</text></g><!--MD5=[10f885db695a6d25c8c9699d3b685389]
+class abstract-factory.iAbstractProductB--><g id="elem_abstract-factory.iAbstractProductB"><rect codeLine="45" fill="#F1F1F1" height="113.1875" id="abstract-factory.iAbstractProductB" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="248" x="327" y="447"/><ellipse cx="384.75" cy="463" fill="#B4A7E5" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M380.6719,458.7656 L380.6719,456.6094 L388.0625,456.6094 L388.0625,458.7656 L385.5938,458.7656 L385.5938,466.8438 L388.0625,466.8438 L388.0625,469 L380.6719,469 L380.6719,466.8438 L383.1406,466.8438 L383.1406,458.7656 L380.6719,458.7656 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="124" x="405.25" y="467.8467">iAbstractProductB</text><line style="stroke:#181818;stroke-width:0.5;" x1="328" x2="574" y1="479" y2="479"/><line style="stroke:#181818;stroke-width:0.5;" x1="328" x2="574" y1="487" y2="487"/><ellipse cx="338" cy="500.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="222" x="347" y="503.9951">setBehaviourB(behaviour string)</text><ellipse cx="338" cy="516.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="347" y="520.292">getBehaviourB() string</text><ellipse cx="338" cy="533.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="165" x="347" y="536.5889">setFeatureB(feature int)</text><ellipse cx="338" cy="549.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="347" y="552.8857">getFeatureB() int</text></g><!--MD5=[62fb470520cc53b6a726d8ae328a3ea5]
+class abstract-factory.client--><g id="elem_abstract-factory.client"><rect codeLine="53" fill="#F1F1F1" height="64.2969" id="abstract-factory.client" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="256" x="177" y="41"/><ellipse cx="282.25" cy="57" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M285.2188,62.6406 Q284.6406,62.9375 284,63.0781 Q283.3594,63.2344 282.6563,63.2344 Q280.1563,63.2344 278.8281,61.5938 Q277.5156,59.9375 277.5156,56.8125 Q277.5156,53.6875 278.8281,52.0313 Q280.1563,50.375 282.6563,50.375 Q283.3594,50.375 284,50.5313 Q284.6563,50.6875 285.2188,50.9844 L285.2188,53.7031 Q284.5938,53.125 284,52.8594 Q283.4063,52.5781 282.7813,52.5781 Q281.4375,52.5781 280.75,53.6563 Q280.0625,54.7188 280.0625,56.8125 Q280.0625,58.9063 280.75,59.9844 Q281.4375,61.0469 282.7813,61.0469 Q283.4063,61.0469 284,60.7813 Q284.5938,60.5 285.2188,59.9219 L285.2188,62.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="302.75" y="61.8467">client</text><line style="stroke:#181818;stroke-width:0.5;" x1="178" x2="432" y1="73" y2="73"/><line style="stroke:#181818;stroke-width:0.5;" x1="178" x2="432" y1="81" y2="81"/><ellipse cx="188" cy="94.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="230" x="197" y="97.9951">createFactory(...) iAbstractFactory</text></g><!--MD5=[a18177038dd097bcedcb6524ca845734]
+link abstract-factory.client to abstract-factory.iAbstractFactory--><g id="link_abstract-factory.client_abstract-factory.iAbstractFactory"><path codeLine="60" d="M305,105.26 C305,121.39 305,141.36 305,159.15 " fill="none" id="abstract-factory.client-to-abstract-factory.iAbstractFactory" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="305,164.59,309,155.59,305,159.59,301,155.59,305,164.59" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[415592d3422a5e627fe483b5fa6eaeed]
+reverse link abstract-factory.iAbstractFactory to abstract-factory.concreteFactory1--><g id="link_abstract-factory.iAbstractFactory_abstract-factory.concreteFactory1"><path codeLine="62" d="M247.3,259.96 C230.82,275.24 213.15,291.61 197.73,305.9 " fill="none" id="abstract-factory.iAbstractFactory-backto-abstract-factory.concreteFactory1" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="242.59,254.79,262.02,246.33,252.1,265.06,242.59,254.79" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[09bdff46368bd1ddc77726613c7a95f6]
+reverse link abstract-factory.iAbstractFactory to abstract-factory.concreteFactory2--><g id="link_abstract-factory.iAbstractFactory_abstract-factory.concreteFactory2"><path codeLine="63" d="M363.08,259.96 C379.68,275.24 397.46,291.61 412.98,305.9 " fill="none" id="abstract-factory.iAbstractFactory-backto-abstract-factory.concreteFactory2" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="358.24,265.03,348.27,246.33,367.73,254.73,358.24,265.03" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[f62c2513ce17ecebfd9d9b230bac38d2]
+link abstract-factory.concreteFactory1 to abstract-factory.iAbstractProductA--><g id="link_abstract-factory.concreteFactory1_abstract-factory.iAbstractProductA"><path codeLine="65" d="M156.02,387.01 C156.45,403.66 156.96,423.4 157.43,441.82 " fill="none" id="abstract-factory.concreteFactory1-to-abstract-factory.iAbstractProductA" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="157.57,446.98,161.3373,437.8802,157.4415,441.9817,153.34,438.0858,157.57,446.98" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[f37f113800e78a13d782a3e8ae4b79cf]
+link abstract-factory.concreteFactory1 to abstract-factory.iAbstractProductB--><g id="link_abstract-factory.concreteFactory1_abstract-factory.iAbstractProductB"><path codeLine="66" d="M230.46,387.01 C263.87,404.51 303.84,425.44 340.51,444.64 " fill="none" id="abstract-factory.concreteFactory1-to-abstract-factory.iAbstractProductB" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="344.97,446.98,338.8461,439.2665,340.5386,444.6642,335.1409,446.3567,344.97,446.98" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[779a230a3ea5cb9c7db09adf9676001b]
+link abstract-factory.concreteFactory2 to abstract-factory.iAbstractProductA--><g id="link_abstract-factory.concreteFactory2_abstract-factory.iAbstractProductA"><path codeLine="67" d="M380.29,387.01 C346.76,404.51 306.66,425.44 269.86,444.64 " fill="none" id="abstract-factory.concreteFactory2-to-abstract-factory.iAbstractProductA" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="265.39,446.98,275.2191,446.3567,269.8214,444.6642,271.5139,439.2665,265.39,446.98" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[f95e3f0cc26cccae5c78478af845fb5e]
+link abstract-factory.concreteFactory2 to abstract-factory.iAbstractProductB--><g id="link_abstract-factory.concreteFactory2_abstract-factory.iAbstractProductB"><path codeLine="68" d="M454.73,387.01 C454.19,403.66 453.55,423.4 452.96,441.82 " fill="none" id="abstract-factory.concreteFactory2-to-abstract-factory.iAbstractProductB" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="452.79,446.98,457.096,438.1223,452.9613,441.9829,449.1007,437.8482,452.79,446.98" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[96d22760afce6dd1ddc55ba97408ffbc]
+reverse link abstract-factory.iAbstractProductA to abstract-factory.concreteProductA--><g id="link_abstract-factory.iAbstractProductA_abstract-factory.concreteProductA"><path codeLine="70" d="M159,580.68 C159,593.59 159,606.96 159,619.77 " fill="none" id="abstract-factory.iAbstractProductA-backto-abstract-factory.concreteProductA" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="152,580.25,159,560.25,166,580.25,152,580.25" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[aa60886ec5d4982221100ff35202a832]
+reverse link abstract-factory.iAbstractProductB to abstract-factory.concreteProductB--><g id="link_abstract-factory.iAbstractProductB_abstract-factory.concreteProductB"><path codeLine="71" d="M451,580.68 C451,593.59 451,606.96 451,619.77 " fill="none" id="abstract-factory.iAbstractProductB-backto-abstract-factory.concreteProductB" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="444,580.25,451,560.25,458,580.25,444,580.25" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[75e10b5bac3ca91e6a94ea4e4bc52cc5]
 @startuml go-dsgn-pttrn-abstract-factory
 
 namespace abstract-factory {
+    class concreteFactory1 << (S,Aquamarine) >> {
+        + makeProductA() iAbstractProductA
+        + makeProductB() iAbstractProductB
 
+    }
+    class concreteFactory2 << (S,Aquamarine) >> {
+        + makeProductA() iAbstractProductA
+        + makeProductB() iAbstractProductB
 
+    }
     class concreteProductA << (S,Aquamarine) >> {
         - behaviourA string
         - featureA int
 
-        + setBehaviour(behaviour string) 
-        + getBehaviour() string
-        + setFeature(feature int) 
-        + getFeature() int
+        + setBehaviourA(behaviour string) 
+        + getBehaviourA() string
+        + setFeatureA(feature int) 
+        + getFeatureA() int
 
     }
-
     class concreteProductB << (S,Aquamarine) >> {
         - behaviourB string
         - featureB int
 
-        + setBehaviour(behaviour string) 
-        + getBehaviour() string
-        + setFeature(feature int) 
-        + getFeature() int
+        + setBehaviourB(behaviour string) 
+        + getBehaviourB() string
+        + setFeatureB(feature int) 
+        + getFeatureB() int
 
     }
-
     interface iAbstractFactory  {
-
-        + makeProductA() iAbstractProduct
-        + makeProductB() iAbstractProduct
-
-    }
-
-    interface iAbstractProduct  {
-
-        + setBehaviour(behaviour string) 
-        + getBehaviour() string
-        + setFeature(feature int) 
-        + getFeature() int
+        + makeProductA() iAbstractProductA
+        + makeProductB() iAbstractProductB
 
     }
+    interface iAbstractProductA  {
+        + setBehaviourA(behaviour string) 
+        + getBehaviourA() string
+        + setFeatureA(feature int) 
+        + getFeatureA() int
 
-    object Factory {
+    }
+    interface iAbstractProductB  {
+        + setBehaviourB(behaviour string) 
+        + getBehaviourB() string
+        + setFeatureB(feature int) 
+        + getFeatureB() int
 
     }
 
     class client {
 
-        + createFactory() iAbstractFactory
-    }
-
-
-    object ProductA {
-
-    }
-
-    class concreteFactory << (S,Aquamarine) >> {
-        + makeProductA() iAbstractProduct
-        + makeProductB() iAbstractProduct
-
-    }
-
-    object ProductB {
-
+        + createFactory(...) iAbstractFactory
     }
 
 }
 
-Factory <.. "abstract-factory.client"
+"abstract-factory.client" - -> "abstract-factory.iAbstractFactory"
 
-'"abstract-factory.client" ..> "ProductA"
-Factory ..> "ProductA"
-ProductA <.. "abstract-factory.concreteProductA"
-ProductA -[hidden]- "abstract-factory.iAbstractProduct"
+"abstract-factory.iAbstractFactory" <|.. "abstract-factory.concreteFactory1"
+"abstract-factory.iAbstractFactory" <|.. "abstract-factory.concreteFactory2"
 
-'"abstract-factory.client" ..> "ProductB"
-Factory ..> "ProductB"
-ProductB <.. "abstract-factory.concreteProductB"
-ProductB -[hidden]- "abstract-factory.iAbstractProduct"
+"abstract-factory.concreteFactory1" - -> "abstract-factory.iAbstractProductA"
+"abstract-factory.concreteFactory1" - -> "abstract-factory.iAbstractProductB"
+"abstract-factory.concreteFactory2" - -> "abstract-factory.iAbstractProductA"
+"abstract-factory.concreteFactory2" - -> "abstract-factory.iAbstractProductB"
 
-"abstract-factory.client" o- -> "abstract-factory.iAbstractFactory"
-"abstract-factory.concreteFactory" - -> "abstract-factory.iAbstractProduct"
-
-"abstract-factory.iAbstractFactory" <|.. "abstract-factory.concreteFactory"
-"abstract-factory.iAbstractProduct" <|.. "abstract-factory.concreteProductA"
-"abstract-factory.iAbstractProduct" <|.. "abstract-factory.concreteProductB"
-
-note "distinct products" as N2
-"abstract-factory.concreteProductA" <.[dotted]. N2
-N2 .[dotted].> "abstract-factory.concreteProductB"
-
-@enduml
-
-@startuml go-dsgn-pttrn-abstract-factory
-
-namespace abstract-factory {
-
-
-    class concreteProductA << (S,Aquamarine) >> {
-        - behaviourA string
-        - featureA int
-
-        + setBehaviour(behaviour string) 
-        + getBehaviour() string
-        + setFeature(feature int) 
-        + getFeature() int
-
-    }
-
-    class concreteProductB << (S,Aquamarine) >> {
-        - behaviourB string
-        - featureB int
-
-        + setBehaviour(behaviour string) 
-        + getBehaviour() string
-        + setFeature(feature int) 
-        + getFeature() int
-
-    }
-
-    interface iAbstractFactory  {
-
-        + makeProductA() iAbstractProduct
-        + makeProductB() iAbstractProduct
-
-    }
-
-    interface iAbstractProduct  {
-
-        + setBehaviour(behaviour string) 
-        + getBehaviour() string
-        + setFeature(feature int) 
-        + getFeature() int
-
-    }
-
-    object Factory {
-
-    }
-
-    class client {
-
-        + createFactory() iAbstractFactory
-    }
-
-
-    object ProductA {
-
-    }
-
-    class concreteFactory << (S,Aquamarine) >> {
-        + makeProductA() iAbstractProduct
-        + makeProductB() iAbstractProduct
-
-    }
-
-    object ProductB {
-
-    }
-
-}
-
-Factory <.. "abstract-factory.client"
-
-Factory ..> "ProductA"
-ProductA <.. "abstract-factory.concreteProductA"
-ProductA -[hidden]- "abstract-factory.iAbstractProduct"
-
-Factory ..> "ProductB"
-ProductB <.. "abstract-factory.concreteProductB"
-ProductB -[hidden]- "abstract-factory.iAbstractProduct"
-
-"abstract-factory.client" o- -> "abstract-factory.iAbstractFactory"
-"abstract-factory.concreteFactory" - -> "abstract-factory.iAbstractProduct"
-
-"abstract-factory.iAbstractFactory" <|.. "abstract-factory.concreteFactory"
-"abstract-factory.iAbstractProduct" <|.. "abstract-factory.concreteProductA"
-"abstract-factory.iAbstractProduct" <|.. "abstract-factory.concreteProductB"
-
-note "distinct products" as N2
-"abstract-factory.concreteProductA" <.[dotted]. N2
-N2 .[dotted].> "abstract-factory.concreteProductB"
+"abstract-factory.iAbstractProductA" <|.. "abstract-factory.concreteProductA"
+"abstract-factory.iAbstractProductB" <|.. "abstract-factory.concreteProductB"
 
 @enduml
 

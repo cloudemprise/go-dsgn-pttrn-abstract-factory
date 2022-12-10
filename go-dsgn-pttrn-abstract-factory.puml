@@ -1,93 +1,74 @@
 @startuml go-dsgn-pttrn-abstract-factory
 
 namespace abstract-factory {
+    class concreteFactory1 << (S,Aquamarine) >> {
+        + makeProductA() iAbstractProductA
+        + makeProductB() iAbstractProductB
 
+    }
+    class concreteFactory2 << (S,Aquamarine) >> {
+        + makeProductA() iAbstractProductA
+        + makeProductB() iAbstractProductB
 
+    }
     class concreteProductA << (S,Aquamarine) >> {
         - behaviourA string
         - featureA int
 
-        + setBehaviour(behaviour string) 
-        + getBehaviour() string
-        + setFeature(feature int) 
-        + getFeature() int
+        + setBehaviourA(behaviour string) 
+        + getBehaviourA() string
+        + setFeatureA(feature int) 
+        + getFeatureA() int
 
     }
-
     class concreteProductB << (S,Aquamarine) >> {
         - behaviourB string
         - featureB int
 
-        + setBehaviour(behaviour string) 
-        + getBehaviour() string
-        + setFeature(feature int) 
-        + getFeature() int
+        + setBehaviourB(behaviour string) 
+        + getBehaviourB() string
+        + setFeatureB(feature int) 
+        + getFeatureB() int
 
     }
-
     interface iAbstractFactory  {
-
-        + makeProductA() iAbstractProduct
-        + makeProductB() iAbstractProduct
-
-    }
-
-    interface iAbstractProduct  {
-
-        + setBehaviour(behaviour string) 
-        + getBehaviour() string
-        + setFeature(feature int) 
-        + getFeature() int
+        + makeProductA() iAbstractProductA
+        + makeProductB() iAbstractProductB
 
     }
+    interface iAbstractProductA  {
+        + setBehaviourA(behaviour string) 
+        + getBehaviourA() string
+        + setFeatureA(feature int) 
+        + getFeatureA() int
 
-    object Factory {
+    }
+    interface iAbstractProductB  {
+        + setBehaviourB(behaviour string) 
+        + getBehaviourB() string
+        + setFeatureB(feature int) 
+        + getFeatureB() int
 
     }
 
     class client {
 
-        + createFactory() iAbstractFactory
-    }
-
-
-    object ProductA {
-
-    }
-
-    class concreteFactory << (S,Aquamarine) >> {
-        + makeProductA() iAbstractProduct
-        + makeProductB() iAbstractProduct
-
-    }
-
-    object ProductB {
-
+        + createFactory(...) iAbstractFactory
     }
 
 }
 
-Factory <.. "abstract-factory.client"
+"abstract-factory.client" --> "abstract-factory.iAbstractFactory"
 
-'"abstract-factory.client" ..> "ProductA"
-Factory ..> "ProductA"
-ProductA <.. "abstract-factory.concreteProductA"
-ProductA -[hidden]- "abstract-factory.iAbstractProduct"
+"abstract-factory.iAbstractFactory" <|.. "abstract-factory.concreteFactory1"
+"abstract-factory.iAbstractFactory" <|.. "abstract-factory.concreteFactory2"
 
-'"abstract-factory.client" ..> "ProductB"
-Factory ..> "ProductB"
-ProductB <.. "abstract-factory.concreteProductB"
-ProductB -[hidden]- "abstract-factory.iAbstractProduct"
+"abstract-factory.concreteFactory1" --> "abstract-factory.iAbstractProductA"
+"abstract-factory.concreteFactory1" --> "abstract-factory.iAbstractProductB"
+"abstract-factory.concreteFactory2" --> "abstract-factory.iAbstractProductA"
+"abstract-factory.concreteFactory2" --> "abstract-factory.iAbstractProductB"
 
-"abstract-factory.client" o--> "abstract-factory.iAbstractFactory"
-"abstract-factory.concreteFactory" --> "abstract-factory.iAbstractProduct"
-
-"abstract-factory.iAbstractFactory" <|.. "abstract-factory.concreteFactory"
-"abstract-factory.iAbstractProduct" <|.. "abstract-factory.concreteProductA"
-"abstract-factory.iAbstractProduct" <|.. "abstract-factory.concreteProductB"
-
-note "distinct products" as N2
-"abstract-factory.concreteProductA" <.[dotted]. N2
-N2 .[dotted].> "abstract-factory.concreteProductB"
+"abstract-factory.iAbstractProductA" <|.. "abstract-factory.concreteProductA"
+"abstract-factory.iAbstractProductB" <|.. "abstract-factory.concreteProductB"
 
 @enduml
